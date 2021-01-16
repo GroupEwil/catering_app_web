@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
 </head>
 
 <body style="background:linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/bg.jpg');">
@@ -27,30 +29,15 @@
             </div>
         </div>
     </nav>
-    <div class="register-photo" style="background: rgba(217,235,172,0);">
-        <div class="form-container">
-            <div class="image-holder" style="background: url(&quot;books.jpg&quot;) center / cover no-repeat;"></div>
-            <form id="loginForm" method="post">
-                <h2 class="sr-only">Login Form</h2>
-                <div class="illustration"><img class="img-thumbnail" src=""></div>
-                <div class="form-group"><input class="form-control" type="email" id="email" name="email" placeholder="Email" autocomplete="on" inputmode="email" style="background: #d9ebac;"></div>
-                <div class="form-group"><input class="form-control" type="password" id="password" name="password" placeholder="Password" required="" minlength="6" style="background: #d9ebac;"></div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: #5a8d08;">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a>
-                <div style="margin-left: 25%;"></div>
-            </form>
-        </div>
-    </div>
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="home.html">Home</a></li>
-                <li class="list-inline-item"><a href="services.html">Services</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">L Lobelo © 2021</p>
-        </footer>
+    <div class="footer-basic"></div>
+    <div class="login-clean" style="background: rgba(241,247,252,0);">
+        <form id="loginForm" method="post" style="background: rgba(255,255,255,0.49);">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
+            <div class="form-group"><input class="form-control" type="email" id="email" name="email" placeholder="Email"></div>
+            <div class="form-group"><input class="form-control" type="password" id="password" name="password" placeholder="Password"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: #5a8d08;">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a>
+        </form>
     </div>
     <footer class="footer text-faded text-center py-5">
         <div class="container">
@@ -59,6 +46,13 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/signup.js"></script>
+    <script src="assets/js/mainfunctions.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cartManager.js"></script>
+    <script src="assets/js/cart.js"></script>
     <script src="assets/js/current-day.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
