@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cart</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+</head>
+
+<body style="background:linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/bg.jpg');">
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3"><br><strong>THE BEST AROUND</strong><br></span><span class="site-heading-lower">Food Catering</span></h1>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">Brand</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive-1">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" id="homeLink" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="catalogueDropdown" href="#" style="font-family: Roboto, sans-serif;font-size: 16px;">Food</a>
+                        <div class="dropdown-menu" id="navMenu"></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" id="homeLink-1" href="about.html">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto text-uppercase" style="margin: 0;margin-left: 0;">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" id="cartLink" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" id="logoutLink" href="" onclick="SignOut()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <h1 class="text-center" style="margin-top: 24px;color: rgb(255,255,255);">Cart</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table" id="cartTable">
+                            <thead>
+                                <tr style="color: rgb(255,255,255);">
+                                    <th style="font-family: Roboto, sans-serif;">Product</th>
+                                    <th style="font-family: Roboto, sans-serif;">Unit Price</th>
+                                    <th style="font-family: Roboto, sans-serif;">Quantity</th>
+                                    <th style="font-family: Roboto, sans-serif;">Price (Excl VAT)</th>
+                                    <th style="font-family: Roboto, sans-serif;">VAT</th>
+                                    <th style="font-family: Roboto, sans-serif;">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div><a class="btn btn-light btn-primary action-button" role="button" id="signupLink" onclick="PlaceOrder()" style="color: #ffffff;padding-bottom: auto;padding-top: 12px;height: 100%;padding-right: auto;padding-left: auto;">Order</a>
+        </div>
+    </div>
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                        <h2 class="section-heading mb-5"><span class="section-heading-upper">Come On In</span><span class="section-heading-lower">We're Open</span></h2>
+                        <ul class="list-unstyled mx-auto list-hours mb-5 text-left">
+                            <li class="d-flex list-unstyled-item list-hours-item">Sunday<span class="ml-auto">Closed</span></li>
+                            <li class="d-flex list-unstyled-item list-hours-item">Monday<span class="ml-auto">7:00 AM to 8:00 PM</span></li>
+                            <li class="d-flex list-unstyled-item list-hours-item">Tuesday<span class="ml-auto">7:00 AM to 8:00 PM</span></li>
+                            <li class="d-flex list-unstyled-item list-hours-item">Wednesday<span class="ml-auto">7:00 AM to 8:00 PM</span></li>
+                            <li class="d-flex list-unstyled-item list-hours-item">Thursday<span class="ml-auto">7:00 AM to 8:00 PM</span></li>
+                            <li class="d-flex list-unstyled-item list-hours-item">Friday<span class="ml-auto">7:00 AM to 8:00 PM</span></li>
+                            <li class="d-flex list-unstyled-item list-hours-item">Saturday<span class="ml-auto">9:00 AM to 5:00 PM</span></li>
+                        </ul>
+                        <p class="address mb-5"><em><strong>1116 Orchard Street</strong><span><br>Golden Valley, Minnesota</span></em></p>
+                        <p class="address mb-0"><small><em>Call Anytime</em></small><span><br>(317) 585-8468</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright&nbsp;©&nbsp;Brand 2021</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-app.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-firestore.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-database.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-storage.js"></script>
+	<script src="/__/firebase/init.js"></script>
+    <script src="assets/js/cartManager.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/current-day.js"></script>
+</body>
+
+</html>

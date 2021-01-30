@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Products - AgriTrade</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">Brand</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive-1">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" id="homeLink" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="catalogueDropdown" href="#" style="font-family: Roboto, sans-serif;font-size: 16px;">Food</a>
+                        <div class="dropdown-menu" id="navMenu"></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" id="homeLink-1" href="about.html">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto text-uppercase" style="margin: 0;margin-left: 0;">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" id="cartLink" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" id="logoutLink" href="" onclick="SignOut()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="margin-top: 24px;">
+        <div class="container">
+            <ol class="breadcrumb" style="background: rgba(233,236,239,0);">
+                <li class="breadcrumb-item"><a href="home.html"><span style="border-color: #2196F3;color: #ffffff;font-family: Roboto, sans-serif;">Home</span></a></li>
+                <li class="breadcrumb-item"><a href="#"><span id="breadCrumbCategory" style="color: #ffffff;font-family: Roboto, sans-serif;">Category Name</span></a></li>
+                <li class="breadcrumb-item"><a href="#"><span id="breadCrumbProduct" style="color: #ffffff;font-family: Roboto, sans-serif;">Product Name</span></a></li>
+            </ol>
+            <div class="row">
+                <div class="col-md-6"><img id="productImage" src="">
+                    <p id="productPrice" style="font-family: Roboto, sans-serif;font-size: 24px;font-weight: bold;margin-left: 20%;">Price</p><button class="btn btn-primary d-block" id="btnAddToCart" type="button" onclick="DownloadPDF()" style="font-family: Roboto, sans-serif;margin-left: 20%;">Add To Cart</button>
+                </div>
+                <div class="col-md-6">
+                    <h1 id="productTitle">Title</h1>
+                    <div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1" style="font-family: Roboto, sans-serif;font-weight:bold;">Description</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2" style="font-family: Roboto, sans-serif;font-weight:bold;">Ingredients</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                <p id="productDescription" style="text-align: justify;font-family: Roboto, sans-serif;color: rgb(255,255,255);">Description</p>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-2">
+                                <p id="productIngredients" style="text-align: justify;font-family: Roboto, sans-serif;color: rgb(255,255,255);">Directions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html" style="font-family: Roboto, sans-serif;">Home</a></li>
+                <li class="list-inline-item"><a href="services.html" style="font-family: Roboto, sans-serif;">Services</a></li>
+                <li class="list-inline-item"><a href="#" style="font-family: Roboto, sans-serif;">Terms</a></li>
+                <li class="list-inline-item"><a href="#" style="font-family: Roboto, sans-serif;">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">L. Lobelo © 2020</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-app.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-firestore.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-database.js"></script>
+	<script src="/__/firebase/7.23.0/firebase-storage.js"></script>
+	<script src="/__/firebase/init.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/cartManager.js"></script>
+    <script src="assets/js/current-day.js"></script>
+</body>
+
+</html>
